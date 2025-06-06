@@ -1,0 +1,13 @@
+// Main SCSS file for Farol project
+// Import Bootstrap variables first, then custom variables
+@import 'variables';
+
+// Import Bootstrap (you can install via npm if needed)
+// @import '~bootstrap/scss/bootstrap';
+
+// Custom styles can be added here or imported from separate files
+// @import 'components/buttons';
+// @import 'components/navbar';
+// @import 'components/hero';
+
+// For now, the styles are in the CSS file for easier development 

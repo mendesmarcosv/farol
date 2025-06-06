@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farol - Landing Page</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- Spline Viewer -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.1/build/spline-viewer.js"></script>
+    
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/imgs/logo-farol-preto.svg" alt="Farol" height="40">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item ms-3">
+                        <a href="cadastro.html" class="btn btn-outline-primary btn-rounded px-4 me-2">
+                            Login
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cadastro.html" class="btn btn-primary btn-rounded px-4">
+                            Fazer parte
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center text-center align-items-center">
+                <div class="col-lg-10 col-xl-8 py-4">
+                    <!-- Tagline Superior -->
+                    <div class="hero-tagline mb-3" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <span class="badge-green">INTELIGÊNCIA ARTIFICIAL EMPÁTICA E ACOLHEDORA</span>
+                    </div>
+                    
+                    <!-- Título Principal -->
+                    <h1 class="hero-main-title mb-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                        A voz que guia, acolhe e
+                        conecta em meio ao caos.
+                    </h1>
+                    
+                    <!-- Subtítulo -->
+                    <p class="hero-description mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                        Uma assistente de voz inteligente e empática, pronta para ajudar em<br>
+                        desastres — com abrigo, apoio e informação certa, na hora certa.
+                    </p>
+                    
+                    <!-- Botão Principal -->
+                    <div class="hero-cta mb-2" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="600">
+                        <a href="cadastro.html" class="btn btn-primary btn-lg btn-rounded px-5 py-3">
+                            Falar com o Farol
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background decorativo -->
+        <div class="hero-bg-elements">
+            <div class="bg-circle bg-circle-1"></div>
+            <div class="bg-circle bg-circle-2"></div>
+            <div class="bg-circle bg-circle-3"></div>
+            <div class="bg-dots"></div>
+        </div>
+    </section>
+
+    <!-- Spline Section -->
+    <section class="spline-section overflow-hidden">
+        <!-- Asset de IA (Spline) -->
+        <div class="ai-asset-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
+            <!-- Placeholder vazio para manter o espaço no layout -->
+            <div class="spline-placeholder"></div>
+            
+            <!-- Container absoluto para o Spline extrapolar -->
+            <div class="spline-container">
+                <spline-viewer 
+                    url="https://prod.spline.design/ToHaFddndQMn1ErO/scene.splinecode"
+                    events-target="global"
+                    mouse-controls="true"
+                    touch-action="none">
+                </spline-viewer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics-section">
+        <!-- Spacer antes do sticky -->
+        <div class="scroll-spacer"></div>
+        
+        <!-- Pin Spacer (sticky) -->
+        <div class="pin-spacer">
+            <div class="container">
+                <div class="row justify-content-center text-center align-items-center min-vh-100">
+                    <div class="col-lg-10 col-xl-8">
+                        <!-- Texto Principal - Com 2 frases -->
+                        <div class="statistics-content">
+                            <h2 class="statistics-title">
+                                <span class="text-line active" data-text="1">
+                                    Desastres naturais aumentaram<br>
+                                    <span class="highlight-number">250% EM 4 ANOS.</span>
+                                </span>
+                                <span class="text-line" data-text="2">
+                                    Mas para muitos, a ajuda ainda é<br>
+                                    <span class="highlight-number">LENTA, DESCOORDENADA E INACESSÍVEL.</span>
+                                </span>
+                            </h2>
+                        </div>
+                        
+                        <!-- Asset do Planeta -->
+                        <div class="planet-asset-container">
+                            <div class="planet-placeholder"></div>
+                            
+                            <!-- Wrapper para animação GSAP -->
+                            <div class="planet-wrapper">
+                                <!-- Planet Rock 1 - Camada de trás -->
+                                <img src="assets/imgs/planet-rock-1.webp" alt="Planet Rock Background" class="planet-rock planet-rock-1">
+                                
+                                <!-- Planet Rock 2 - Camada da frente -->
+                                <img src="assets/imgs/planet-rock-2.webp" alt="Planet Rock Foreground" class="planet-rock planet-rock-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="space-bg-white"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="solution-section">
+        <!-- Spacer antes do sticky -->
+        <div class="scroll-spacer-white"></div>
+        
+        <!-- Pin Spacer (sticky) -->
+        <div class="pin-spacer-white">
+            <!-- Background animado com blur -->
+            <div class="animated-bg">
+                <div class="bg-blob bg-blob-yellow"></div>
+                <div class="bg-blob bg-blob-green"></div>
+            </div>
+            
+            <div class="container">
+                <div class="row justify-content-center text-center align-items-center min-vh-100">
+                    <div class="col-lg-10 col-xl-8">
+                        <!-- Texto Principal - Com 2 frases -->
+                        <div class="solution-content">
+                            <!-- Logo Farol -->
+                            <div class="solution-logo">
+                                <img src="assets/imgs/logo-farol-icon.svg" alt="Farol Icon" class="farol-icon">
+                            </div>
+                            
+                            <h2 class="solution-title">
+                                <div class="text-container">
+                                    <span class="text-line-white active" data-text="1">
+                                        Mas e se existisse uma voz que guiasse cada pessoa,
+                                    </span>
+                                    <span class="text-line-white" data-text="2">
+                                        exatamente no que ela precisa?
+                                    </span>
+                                    <span class="text-line-white" data-text="3">
+                                        Chegou o <span class="highlight-number-green">Farol.</span>
+                                    </span>
+                                </div>
+                            </h2>
+                        </div>
+                        
+                        <!-- Asset Container (pode adicionar depois) -->
+                        <div class="solution-asset-container">
+                            <div class="solution-placeholder"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Split Layout -->
+    <section id="features" class="features-section">
+        <div class="container-fluid h-100">
+            <div class="row features-row is-reverse h-100 g-0">
+                <!-- Lado Esquerdo - Texto -->
+                <div class="col-lg-5 offset-lg-1 features-content d-flex align-items-center ">
+                    <div class="content-wrapper">
+                        <h2 class="features-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            Escuta que acolhe,
+                            voz que acalma
+                        </h2>
+                        <p class="features-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            O Farol conversa com empatia em momentos de medo e incerteza. <br><br>
+                            Dá orientações práticas, apoia emocionalmente e ajuda você a respirar fundo quando tudo parece fora do lugar.
+                        </p>
+                        <div class="features-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <a href="cadastro.html" class="btn btn-primary btn-lg btn-rounded px-4 py-3">
+                                Conversar com o Farol
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lado Direito - Mídia -->
+                <div class="col-lg-6 features-media d-flex align-items-center justify-content-center">
+                    <div class="media-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="assets/imgs/split-1.webp" alt="Demonstração Farol" class="img-fluid rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Split Layout (Imagem à Esquerda) -->
+    <section class="features-section">
+        <div class="container-fluid h-100">
+            <div class="row features-row h-100 g-0">
+                <!-- Lado Esquerdo - Mídia -->
+                <div class="col-lg-6 features-content d-flex align-items-center justify-content-center">
+                    <div class="media-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="assets/imgs/split-2.webp" alt="Demonstração Farol" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <!-- Lado Direito - Texto -->
+                <div class="col-lg-5 features-content d-flex align-items-center offset-lg-0">
+                    <div class="content-wrapper">
+                        <h2 class="features-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            Te guia até o que você precisa
+                        </h2>
+                        <p class="features-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            O Farol encontra abrigos próximos com detalhes sobre acessibilidade, pets, serviços, entre outros.<br><br>
+                            Tudo por voz, de forma simples e rápida. Basta dizer suas necessidades que ele vai te indicar o melhor.
+                        </p>
+                        <div class="features-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <a href="cadastro.html" class="btn btn-primary btn-lg btn-rounded px-4 py-3">
+                                Descobrir locais próximos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Split Layout -->
+    <section id="features" class="features-section">
+        <div class="container-fluid h-100">
+            <div class="row features-row is-reverse h-100 g-0">
+                <!-- Lado Esquerdo - Texto -->
+                <div class="col-lg-5 offset-lg-1 features-content d-flex align-items-center ">
+                    <div class="content-wrapper">
+                        <h2 class="features-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            Conecta quem quer ajudar com quem precisa
+                        </h2>
+                        <p class="features-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            Se você quer se voluntariar pra alguma causa ou projeto, o Farol entende suas habilidades e indica onde você ajudar — como cozinhas solidárias, abrigos ou mutirões de apoio.
+                        </p>
+                        <div class="features-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <a href="cadastro.html" class="btn btn-primary btn-lg btn-rounded px-4 py-3">
+                                Quero contribuir
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Lado Direito - Mídia -->
+                <div class="col-lg-6 features-media d-flex align-items-center justify-content-center">
+                    <div class="media-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="assets/imgs/split-3.webp" alt="Demonstração Farol" class="img-fluid rounded-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section - Split Layout (Imagem à Esquerda) -->
+    <section class="features-section">
+        <div class="container-fluid h-100">
+            <div class="row features-row h-100 g-0">
+                <!-- Lado Esquerdo - Mídia -->
+                <div class="col-lg-6 features-content d-flex align-items-center justify-content-center">
+                    <div class="media-content" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+                        <img src="assets/imgs/split-4.webp" alt="Demonstração Farol" class="img-fluid rounded-3">
+                    </div>
+                </div>
+                <!-- Lado Direito - Texto -->
+                <div class="col-lg-5 features-content d-flex align-items-center offset-lg-0">
+                    <div class="content-wrapper">
+                        <h2 class="features-title" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                            Aponta o melhor destino para sua doação
+                        </h2>
+                        <p class="features-description" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                            Quer doar? O Farol mostra o que mais falta em cada região e orienta como doar com segurança, impacto e transparência, via entrega ou Pix.
+                            <br><br>
+                            Além disso, pode te enviar links de vaquinhas, caso queira fazer uma doação mais direta e digital.
+                        </p>
+                        <div class="features-cta" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                            <a href="cadastro.html" class="btn btn-primary btn-lg btn-rounded px-4 py-3">
+                                Quero poder ajudar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Spline Section -->
+    <section id="spline-section" class="spline-section py-5 overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center text-center align-items-center min-vh-50 py-5">
+                <div class="col-lg-10 col-xl-8">
+                    <div class="mb-5 btn-spline-wrap" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                        <a href="#" id="audio-btn" class="btn btn-outline-primary btn-lg btn-rounded px-4 py-3 d-inline-flex align-items-center justify-content-center" style="gap: 0.5rem;">
+                            <span class="btn-audio-content" style="display: flex; align-items: center; gap: 0.5rem;">
+                                <!-- Ícone de Play -->
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8 5V19L19 12L8 5Z" fill="#54BF44"/>
+                                </svg>
+                                <span class="btn-audio-text">Ei, clique aqui para ver como te ajudo!</span>
+                            </span>
+                            <span class="btn-audio-anim" style="display:none;">
+                                <!-- SVG Equalizer Animation -->
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect class="bar bar1" x="2" y="10" width="4" height="8" rx="2" fill="#54BF44">
+                                        <animate attributeName="height" values="8;16;8" dur="0.7s" repeatCount="indefinite"/>
+                                        <animate attributeName="y" values="10;2;10" dur="0.7s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <rect class="bar bar2" x="10" y="6" width="4" height="12" rx="2" fill="#54BF44">
+                                        <animate attributeName="height" values="12;6;12" dur="0.7s" repeatCount="indefinite"/>
+                                        <animate attributeName="y" values="6;12;6" dur="0.7s" repeatCount="indefinite"/>
+                                    </rect>
+                                    <rect class="bar bar3" x="18" y="12" width="4" height="6" rx="2" fill="#54BF44">
+                                        <animate attributeName="height" values="6;14;6" dur="0.7s" repeatCount="indefinite"/>
+                                        <animate attributeName="y" values="12;4;12" dur="0.7s" repeatCount="indefinite"/>
+                                    </rect>
+                                </svg>
+                            </span>
+                        </a>
+                        <audio id="audio1" src="assets/audios/audio1.mp3"></audio>
+                        <audio id="audio2" src="assets/audios/audio2.mp3"></audio>
+                    </div>
+                    <div class="ai-asset-container" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+                        <div class="spline-placeholder"></div>
+                        <div class="spline-container">
+                            <spline-viewer 
+                                url="https://prod.spline.design/ToHaFddndQMn1ErO/scene.splinecode"
+                                events-target="global"
+                                mouse-controls="true"
+                                touch-action="none">
+                            </spline-viewer>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos Section -->
+    <section class="testimonials-section overflow-hidden" style="background: #F4F1ED;">
+        <div class="container">
+            <h2 class="text-center mb-5 testimonial-title" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" style="color: var(--primary-color); font-size: 3rem; font-family: 'Rethink Sans', sans-serif; font-weight: 600;">
+                A voz do Farol chegou até eles<br>— e fez diferença.
+            </h2>
+            <div class="row justify-content-center g-4">
+                <!-- Card 1 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="testimonial-card p-4 h-100" style="background: var(--light-green); border-radius: 32px;">
+                        <p style="font-size: 1rem; font-family: 'Montserrat', sans-serif;">"A água já estava na porta e eu não sabia pra onde ir. Falei com o Farol, ele me indicou m abrigo próximo que aceitava pets e consegui sair com meus filhos e nosso cachorro em segurança."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="assets/imgs/mariana-souza.webp" alt="Mariana Souza" style="width:48px;height:48px;border-radius:50%;object-fit:cover;margin-right:1rem;">
+                            <div>
+                                <strong style="font-family: 'Montserrat', sans-serif;">Mariana Souza</strong><br>
+                                <span style="font-size: 1rem; color: #222;">Blumenau - SC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="testimonial-card p-4 h-100" style="background: var(--light-green); border-radius: 32px;">
+                        <p style="font-size: 1rem; font-family: 'Montserrat', sans-serif;">"Queria ajudar, mas não sabia como. Perguntei ao Farol e ele me disse que um abrigo perto de mim precisava de alimentos. Levei pessoalmente no mesmo dia. Foi simples e real."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="assets/imgs/eduardo-freitas.webp" alt="Eduardo Freitas" style="width:48px;height:48px;border-radius:50%;object-fit:cover;margin-right:1rem;">
+                            <div>
+                                <strong style="font-family: 'Montserrat', sans-serif;">Eduardo Freitas</strong><br>
+                                <span style="font-size: 1rem; color: #222;">Voluntário, Recife - PE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="testimonial-card p-4 h-100" style="background: var(--light-green); border-radius: 32px;">
+                        <p style="font-size: 1rem; font-family: 'Montserrat', sans-serif;">""Estava sozinha e em pânico. Contei isso ao Farol e ele respondeu com calma, me perguntou se eu estava segura e me mostrou um abrigo a 2 km. Consegui chegar com ajuda de vizinhos. Me senti ouvida.""</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="assets/imgs/juliana-alves.webp" alt="Juliana Alves" style="width:48px;height:48px;border-radius:50%;object-fit:cover;margin-right:1rem;">
+                            <div>
+                                <strong style="font-family: 'Montserrat', sans-serif;">Juliana Alves</strong><br>
+                                <span style="font-size: 1rem; color: #222;">Porto Alegre - RS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Imagem da Planta -->
+            <div class="row justify-content-center mt-5">
+                <div class="col-auto">
+                    <div class="plant-container" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300">
+                        <img src="assets/imgs/plant.webp" alt="Planta crescendo na pedra" class="img-fluid plant-image" style="max-width: 600px; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section position-relativ overflow-hidden" style="background: #25B610; min-height: 100vh; display: flex; align-items: center;">
+        <div class="container">
+            <div class="row align-items-center justify-content-between flex-lg-row flex-column-reverse">
+                <!-- Lado Esquerdo -->
+                <div class="col-lg-6 content-cta d-flex flex-column align-items-start justify-content-center text-lg-start text-center mb-5 mb-lg-0">
+                    <img src="assets/imgs/logo-farol-icon.svg" alt="Logo Farol" data-aos="fade-right" data-aos-duration="800" data-aos-delay="100" style="width:64px;height:64px;background:rgba(255,255,255,0.12);border-radius:50%;margin-bottom:2rem;">
+                    <h2 class=" title-cta text-white" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200" style="font-family:'Rethink Sans',sans-serif; line-height:1.1; margin-bottom:2.5rem;">
+                        Em situações de emergência,
+                        a melhor resposta é uma voz
+                        que cuida.
+                    </h2>
+                    <a href="cadastro.html" class="btn btn-white btn-lg btn-rounded px-5 py-3" data-aos="fade-right" data-aos-duration="800" data-aos-delay="300" style="background:#fff; color:var(--primary-color); font-weight:600; font-family:'Montserrat',sans-serif; font-size:1.2rem; border-radius:32px;">
+                        Baixar aplicativo
+                    </a>
+                </div>
+                <!-- Lado Direito -->
+                <div class="col-lg-6 d-flex align-items-center justify-content-center position-relative mb-5 mb-lg-0">
+                    <div class="cta-radar position-absolute top-50 start-50 translate-middle" style="z-index:1;">
+                        <span class="radar-circle radar-1"></span>
+                        <span class="radar-circle radar-2"></span>
+                        <span class="radar-circle radar-3"></span>
+                    </div>
+                    <img src="assets/imgs/cta-img.webp" alt="App Farol" class="img-fluid rounded-4 position-relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" style="max-width:600px; z-index:2; background:transparent;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section bg-dark-green" style="background: var(--dark-green);">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <img src="assets/imgs/logo-farol-branco.svg" alt="Farol" style="max-width:340px; width:100%; height:auto; margin-bottom:2.5rem;">
+            <hr style="width:70%; border-top:1px solid rgba(255,255,255,0.18); margin-bottom:2rem;">
+            <p class="mb-0 text-white" style="opacity:0.85; font-size:1rem;">© 2025 Farol. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      const btn = document.getElementById('audio-btn');
+      const audio1 = document.getElementById('audio1');
+      const audio2 = document.getElementById('audio2');
+      const anim = btn.querySelector('.btn-audio-anim');
+      const content = btn.querySelector('.btn-audio-content');
+
+      let isPlaying = false;
+
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        if (isPlaying) return;
+        isPlaying = true;
+        anim.style.display = 'inline-block';
+        content.style.display = 'none';
+        audio1.pause(); audio1.currentTime = 0;
+        audio2.pause(); audio2.currentTime = 0;
+        audio1.play();
+        audio1.onended = function() {
+          setTimeout(function() {
+            audio2.play();
+            audio2.onended = function() {
+              anim.style.display = 'none';
+              content.style.display = 'flex';
+              isPlaying = false;
+            };
+          }, 1000); // 1 segundo de pausa
+        };
+      });
+    </script>
+
+    <script>
+      // Script para remover o badge do Spline
+      function removeSplineLogo() {
+        document.querySelectorAll('spline-viewer').forEach(function(viewer) {
+          if (viewer.shadowRoot) {
+            const logo = viewer.shadowRoot.querySelector('#logo');
+            if (logo) logo.remove();
+          }
+        });
+      }
+      // Tenta remover ao carregar e após um pequeno delay
+      window.addEventListener('DOMContentLoaded', function() {
+        removeSplineLogo();
+        setTimeout(removeSplineLogo, 1000);
+        setTimeout(removeSplineLogo, 2000);
+      });
+    </script>
+
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+            disable: 'mobile'
+        });
+    </script>
+</body>
+</html> 

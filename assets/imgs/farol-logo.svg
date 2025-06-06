@@ -1,0 +1,25 @@
+<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Farol Icon -->
+  <g id="farol-icon">
+    <!-- Base do farol -->
+    <rect x="12" y="30" width="16" height="6" rx="2" fill="#54BF44"/>
+    
+    <!-- Torre do farol -->
+    <rect x="14" y="15" width="12" height="15" rx="1" fill="#54BF44"/>
+    
+    <!-- Topo do farol -->
+    <rect x="13" y="12" width="14" height="4" rx="2" fill="#54BF44"/>
+    
+    <!-- Luz do farol -->
+    <circle cx="20" cy="14" r="2" fill="#DEF3C6"/>
+    
+    <!-- Raios de luz -->
+    <path d="M8 14 L12 14 M28 14 L32 14 M20 6 L20 10 M14.5 8.5 L17 11 M25.5 8.5 L23 11 M14.5 19.5 L17 17 M25.5 19.5 L23 17" 
+          stroke="#54BF44" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  </g>
+  
+  <!-- Texto Farol -->
+  <g id="farol-text">
+    <text x="45" y="25" font-family="Rethink Sans, sans-serif" font-size="20" font-weight="700" fill="#54BF44">Farol</text>
+  </g>
+</svg> 
