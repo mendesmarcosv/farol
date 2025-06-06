@@ -1776,6 +1776,11 @@ html {
 }
 
 @media (max-width: 768px) {
+
+  .cta-app-image {
+    max-width: 400px !important;
+  }
+
   .statistics-section {
     height: 300vh; /* Mantém altura para scroll */
     background: var(--dark-green);
