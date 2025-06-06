@@ -1328,22 +1328,40 @@ html {
       transparent 100%);
   }
   
+  /* Menu Mobile Melhorado */
   .navbar-nav {
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #f8f9fa; /* Cinza mais claro */
     backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 1rem;
+    border-radius: 15px;
+    padding: 1.5rem;
     margin-top: 1rem;
+    text-align: center; /* Centraliza o conteúdo */
   }
   
   .navbar-nav .nav-link {
-    margin: 0.25rem 0;
+    margin: 0.5rem 0;
+    text-align: center; /* Centraliza os links */
+    padding: 0.75rem 1rem !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(84, 191, 68, 0.1); /* Fundo verde claro no hover */
   }
   
   .navbar .btn {
-    margin: 0.5rem 0;
+    margin: 0.75rem auto; /* Centraliza os botões */
     display: block;
     width: 100%;
+    max-width: 200px; /* Limita a largura dos botões */
+  }
+  
+  /* Estilização do toggler */
+  .navbar-toggler {
+    border: 2px solid #e9ecef !important;
+    border-radius: 8px !important;
+    padding: 0.5rem 0.75rem !important;
   }
   
   .planet-rock-2 {
@@ -1432,6 +1450,53 @@ html {
   
   .badge-green {
     font-size: 1rem;
+  }
+  
+  /* Menu Mobile - Telas Menores */
+  .navbar-nav {
+    background-color: #f8f9fa; /* Cinza mais claro */
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: center;
+  }
+  
+  .navbar-nav .nav-link {
+    margin: 0.6rem 0;
+    text-align: center;
+    padding: 1rem 1.5rem !important;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(84, 191, 68, 0.12);
+    transform: translateY(-2px);
+  }
+  
+  .navbar .btn {
+    margin: 1rem auto 0.5rem auto;
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    padding: 0.8rem 1.5rem;
+  }
+  
+  /* Última margem do botão */
+  .navbar .btn:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Estilização aprimorada do toggler */
+  .navbar-toggler {
+    border: 2px solid #e9ecef !important;
+    border-radius: 10px !important;
+    padding: 0.6rem 0.8rem !important;
   }
   
   /* Remove padding lateral APENAS do hero no mobile */
@@ -1633,8 +1698,8 @@ html {
   .hero-section .hero-main-title,
   .hero-section .hero-description,
   .hero-section .hero-cta {
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+    padding-left: 30px !important;
+    padding-right: 30px !important;
   }
   
   .ai-asset-container {
