@@ -1,6 +1,6 @@
 # 🚢 Farol - Landing Page
 
-Uma landing page moderna e minimalista desenvolvida com Bootstrap 5, seguindo o design do Figma e inspirada no site [Saapro](https://www.saapro.ae/).
+Uma landing page moderna e minimalista desenvolvida com Bootstrap 5, seguindo o design do Figma
 
 ## 🎨 Design
 
@@ -88,35 +88,12 @@ npm install -g sass
 sass assets/scss/main.scss assets/css/style.css --watch
 ```
 
-## 🌐 Como Visualizar
 
-Simplesmente abra o arquivo `index.html` em seu navegador ou use um servidor local:
-
-```bash
-# Com Python
-python -m http.server 8000
-
-# Com Node.js (http-server)
-npx http-server .
-
-# Com PHP
-php -S localhost:8000
-```
-
-## 📋 Próximos Passos
-
-1. **Adicionar seções restantes** baseadas no Figma
-2. **Implementar animações específicas** do design
-3. **Otimizar performance** e carregamento
-4. **Adicionar formulário de contato** funcional
-5. **Implementar SEO** básico
 
 ## 🔗 Links de Referência
 
 - [Design no Figma](https://www.figma.com/design/GotBCnm3DQRYYKkvgluq5G/Farol?node-id=66-497&t=gI7M9FkFgDer5MVi-1)
-- [Site de Referência - Saapro](https://www.saapro.ae/)
 - [Bootstrap 5 Documentation](https://getbootstrap.com/docs/5.3/)
-- [Google Fonts](https://fonts.google.com/)
 
 ---
 
