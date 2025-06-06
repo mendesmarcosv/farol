@@ -1391,14 +1391,14 @@ html {
   .bg-blob-yellow {
     width: 350px;
     height: 350px;
-    left: 10%; /* Centralizando mais para tablet */
+    left: -15%; /* Centralizando mais para tablet */
     top: 25%;
   }
   
   .bg-blob-green {
     width: 450px;
     height: 450px;
-    right: -5%; /* Ligeiramente mais centralizado */
+    right: -15%; /* Ligeiramente mais centralizado */
     top: 25%;
   }
   
@@ -1604,14 +1604,14 @@ html {
   .bg-blob-yellow {
     width: 300px;
     height: 300px;
-    left: 20%; /* Centralizando mais para mobile */
+    left: -150%; /* Centralizando mais para mobile */
     top: 30%;
   }
   
   .bg-blob-green {
     width: 350px;
     height: 350px;
-    right: 15%; /* Centralizando mais para mobile */
+    right: -15%; /* Centralizando mais para mobile */
     top: 30%;
   }
   
@@ -1784,14 +1784,14 @@ html {
   .bg-blob-yellow {
     width: 250px;
     height: 250px;
-    left: 25%; /* Centralizando mais para mobile pequeno */
+    left: -15%; /* Centralizando mais para mobile pequeno */
     top: 35%;
   }
   
   .bg-blob-green {
     width: 280px;
     height: 280px;
-    right: 20%; /* Centralizando mais para mobile pequeno */
+    right: -15%; /* Centralizando mais para mobile pequeno */
     top: 35%;
   }
 
@@ -2080,13 +2080,13 @@ html {
   .bg-blob-yellow {
     width: 250px;
     height: 250px;
-    left: 25%; /* Centralizando mais para mobile pequeno */
+    left: -15%; /* Centralizando mais para mobile pequeno */
     top: 35%;
   }
   .bg-blob-green {
     width: 280px;
     height: 280px;
-    right: 20%; /* Centralizando mais para mobile pequeno */
+    right: -15%; /* Centralizando mais para mobile pequeno */
     top: 35%;
   }
 }
@@ -2145,13 +2145,13 @@ html {
   .bg-blob-yellow {
     width: 250px;
     height: 250px;
-    left: 25%; /* Centralizando mais para mobile pequeno */
+    left: -15%; /* Centralizando mais para mobile pequeno */
     top: 35%;
   }
   .bg-blob-green {
     width: 280px;
     height: 280px;
-    right: 20%; /* Centralizando mais para mobile pequeno */
+    right: -15%; /* Centralizando mais para mobile pequeno */
     top: 35%;
   }
 }
